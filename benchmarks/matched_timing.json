@@ -1,0 +1,970 @@
+{
+  "measurement_type": "matched_position_timing",
+  "started_at": "2026-11-12T09:13:09.496612+00:00",
+  "environment": {
+    "python": "3.11.16 (main, Aug 25 2026, 14:00:53) [Clang 22.1.3 ]",
+    "numpy": "2.4.6",
+    "pygame": "2.6.1",
+    "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "executable": "/home/yizhou/.local/bin/python3.11"
+  },
+  "sources": {
+    "candidate": "/home/yizhou/5002Final/benchmarks/prelearning_reference.py",
+    "baseline": "/home/yizhou/5002Final/benchmarks/baseline.py"
+  },
+  "settings": {
+    "samples_requested": 12,
+    "samples_selected": 12,
+    "repeats": 2,
+    "move_limit_seconds": 5.0,
+    "parallel_calls": false,
+    "agent_rng": "SeedSequence([seed, game_index, ply, repeat]) -> np.random.seed; same for both engines",
+    "call_order": "candidate first when (sample_index + repeat - 1) is even; baseline first otherwise",
+    "timeout_enforcement": "SIGALRM and elapsed time",
+    "selection": {
+      "population": "pre-move nonterminal states of legal, unchanged, on-time recorded moves with ply >= 3; stored game order then move order",
+      "eligible_positions": 864,
+      "indices_zero_based": [
+        0,
+        78,
+        156,
+        235,
+        313,
+        392,
+        470,
+        549,
+        627,
+        706,
+        784,
+        863
+      ],
+      "rule": "k=min(samples,N); floor(i*(N-1)/(k-1)) for i=0..k-1; k=1 uses floor((N-1)/2)",
+      "uses_timings_or_outcomes": false
+    }
+  },
+  "source_tournament": {
+    "path": "/home/yizhou/5002Final/benchmarks/pretable_tournament.json",
+    "timing_source": "head_to_head_tournament",
+    "started_at": "2026-11-12T08:51:18.911458+00:00",
+    "updated_at": "2026-11-12T09:07:05.968872+00:00",
+    "sources": {
+      "candidate": "/home/yizhou/5002Final/benchmarks/pretable_reference.py",
+      "baseline": "/home/yizhou/5002Final/benchmarks/baseline.py"
+    },
+    "settings": {
+      "seeds": [
+        21011,
+        21012,
+        21021,
+        21022
+      ],
+      "rows": 17,
+      "cols": 13,
+      "horizontal": 0.85,
+      "vertical": 0.7,
+      "move_limit_seconds": 5.0,
+      "parallel_games": false,
+      "board_rng": "numpy.Generator(PCG64(seed))",
+      "agent_rng": "SeedSequence([seed, ply, color == 1, agent_index]) -> np.random.seed",
+      "agent_indices": {
+        "candidate": 0,
+        "baseline": 1
+      },
+      "timeout_enforcement": "SIGALRM and elapsed time",
+      "match_tiebreak": "lower combined thinking time across both rounds"
+    },
+    "completed_games": 8
+  },
+  "samples": [
+    {
+      "game_index": 0,
+      "game_id": 1,
+      "seed": 21011,
+      "ply": 3,
+      "color": 1,
+      "sample_index": 0,
+      "population_index": 0,
+      "calls": [
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 2140209148,
+          "seconds": 0.5017074369970942,
+          "point": [
+            9,
+            7
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 2140209148,
+          "seconds": 1.8007525550056016,
+          "point": [
+            6,
+            8
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 1880993036,
+          "seconds": 1.8012729439942632,
+          "point": [
+            8,
+            8
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 1880993036,
+          "seconds": 0.501322922995314,
+          "point": [
+            5,
+            8
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 0,
+      "game_id": 1,
+      "seed": 21011,
+      "ply": 81,
+      "color": 1,
+      "sample_index": 1,
+      "population_index": 78,
+      "calls": [
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 146896975,
+          "seconds": 1.8009220840031048,
+          "point": [
+            15,
+            5
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 146896975,
+          "seconds": 0.7513767500058748,
+          "point": [
+            16,
+            5
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 1270263948,
+          "seconds": 0.7529828059923602,
+          "point": [
+            7,
+            4
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 1270263948,
+          "seconds": 1.8006056529993657,
+          "point": [
+            7,
+            0
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 0,
+      "game_id": 1,
+      "seed": 21011,
+      "ply": 159,
+      "color": 1,
+      "sample_index": 2,
+      "population_index": 156,
+      "calls": [
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 3278645008,
+          "seconds": 0.0006028779898770154,
+          "point": [
+            11,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 3278645008,
+          "seconds": 1.800694656005362,
+          "point": [
+            11,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 1479745201,
+          "seconds": 1.8013204310118454,
+          "point": [
+            11,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 1479745201,
+          "seconds": 0.0005416689964476973,
+          "point": [
+            11,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 1,
+      "game_id": 2,
+      "seed": 21011,
+      "ply": 19,
+      "color": 1,
+      "sample_index": 3,
+      "population_index": 235,
+      "calls": [
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 285450150,
+          "seconds": 1.8012543939985335,
+          "point": [
+            9,
+            6
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 285450150,
+          "seconds": 0.7513260760024423,
+          "point": [
+            9,
+            6
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 1559498820,
+          "seconds": 0.7509585680090822,
+          "point": [
+            9,
+            6
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 1559498820,
+          "seconds": 1.801019136008108,
+          "point": [
+            7,
+            5
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 1,
+      "game_id": 2,
+      "seed": 21011,
+      "ply": 97,
+      "color": 1,
+      "sample_index": 4,
+      "population_index": 313,
+      "calls": [
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 129210875,
+          "seconds": 0.7510516059992369,
+          "point": [
+            11,
+            8
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 129210875,
+          "seconds": 1.8006677139928797,
+          "point": [
+            6,
+            4
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 3734335879,
+          "seconds": 1.8006420910096494,
+          "point": [
+            6,
+            4
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 3734335879,
+          "seconds": 0.7511506790033309,
+          "point": [
+            14,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 1,
+      "game_id": 2,
+      "seed": 21011,
+      "ply": 176,
+      "color": -1,
+      "sample_index": 5,
+      "population_index": 392,
+      "calls": [
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 1047952957,
+          "seconds": 1.802712585995323,
+          "point": [
+            3,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 1047952957,
+          "seconds": 0.0006953979900572449,
+          "point": [
+            3,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 2528550024,
+          "seconds": 0.0007292579975910485,
+          "point": [
+            3,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 2528550024,
+          "seconds": 1.8010823919903487,
+          "point": [
+            3,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 3,
+      "game_id": 4,
+      "seed": 21012,
+      "ply": 4,
+      "color": -1,
+      "sample_index": 6,
+      "population_index": 470,
+      "calls": [
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 872724960,
+          "seconds": 0.50096248499176,
+          "point": [
+            10,
+            8
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 872724960,
+          "seconds": 1.8006121530052042,
+          "point": [
+            8,
+            5
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 800324637,
+          "seconds": 1.8024448180076433,
+          "point": [
+            6,
+            4
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 800324637,
+          "seconds": 0.5008445780113107,
+          "point": [
+            12,
+            6
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 4,
+      "game_id": 5,
+      "seed": 21021,
+      "ply": 53,
+      "color": 1,
+      "sample_index": 7,
+      "population_index": 549,
+      "calls": [
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 413950666,
+          "seconds": 1.8015525840019109,
+          "point": [
+            7,
+            2
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 413950666,
+          "seconds": 0.22613142800400965,
+          "point": [
+            7,
+            2
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 3804633754,
+          "seconds": 0.2228404710040195,
+          "point": [
+            7,
+            2
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 3804633754,
+          "seconds": 1.8009971300052712,
+          "point": [
+            7,
+            2
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 4,
+      "game_id": 5,
+      "seed": 21021,
+      "ply": 131,
+      "color": 1,
+      "sample_index": 8,
+      "population_index": 627,
+      "calls": [
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 2867771941,
+          "seconds": 0.7530850240000291,
+          "point": [
+            11,
+            9
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 2867771941,
+          "seconds": 1.8011774150072597,
+          "point": [
+            7,
+            4
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 347915348,
+          "seconds": 1.8006485879886895,
+          "point": [
+            7,
+            12
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 347915348,
+          "seconds": 0.7513294839882292,
+          "point": [
+            11,
+            3
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 4,
+      "game_id": 5,
+      "seed": 21021,
+      "ply": 210,
+      "color": -1,
+      "sample_index": 9,
+      "population_index": 706,
+      "calls": [
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 829340033,
+          "seconds": 1.8014295350003522,
+          "point": [
+            16,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 829340033,
+          "seconds": 0.0008583689923398197,
+          "point": [
+            16,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 3931416530,
+          "seconds": 0.0004883590008830652,
+          "point": [
+            16,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 3931416530,
+          "seconds": 1.801290285991854,
+          "point": [
+            16,
+            10
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 5,
+      "game_id": 6,
+      "seed": 21021,
+      "ply": 69,
+      "color": 1,
+      "sample_index": 10,
+      "population_index": 784,
+      "calls": [
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 3252959565,
+          "seconds": 0.0008381229999940842,
+          "point": [
+            5,
+            3
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 3252959565,
+          "seconds": 1.8007400969945593,
+          "point": [
+            7,
+            2
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 2985191471,
+          "seconds": 1.8006903619971126,
+          "point": [
+            7,
+            2
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 2985191471,
+          "seconds": 0.0006069879891583696,
+          "point": [
+            5,
+            3
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "game_index": 7,
+      "game_id": 8,
+      "seed": 21022,
+      "ply": 28,
+      "color": -1,
+      "sample_index": 11,
+      "population_index": 863,
+      "calls": [
+        {
+          "agent": "baseline",
+          "repeat": 1,
+          "order": 1,
+          "rng_seed": 3843233430,
+          "seconds": 0.0004826780059374869,
+          "point": [
+            4,
+            9
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 1,
+          "order": 2,
+          "rng_seed": 3843233430,
+          "seconds": 0.0007305580074898899,
+          "point": [
+            4,
+            9
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "candidate",
+          "repeat": 2,
+          "order": 1,
+          "rng_seed": 1811192889,
+          "seconds": 0.00038452900480479,
+          "point": [
+            4,
+            9
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        },
+        {
+          "agent": "baseline",
+          "repeat": 2,
+          "order": 2,
+          "rng_seed": 1811192889,
+          "seconds": 0.0006450990040320903,
+          "point": [
+            4,
+            9
+          ],
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true,
+          "valid": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "timing_source": "matched_position_timing",
+    "completed_samples": 12,
+    "agents": {
+      "candidate": {
+        "calls": 24,
+        "valid_calls": 24,
+        "invalid_calls": 0,
+        "total_seconds": 8.473546443972737,
+        "mean_seconds": 0.3530644351655307,
+        "median_seconds": 0.36348800300766015,
+        "p95_seconds": 0.7527418975943874,
+        "move_max_seconds": 0.7530850240000291,
+        "illegal_moves": 0,
+        "input_mutations": 0,
+        "over_five_seconds": 0,
+        "errors": 0
+      },
+      "baseline": {
+        "calls": 24,
+        "valid_calls": 24,
+        "invalid_calls": 0,
+        "total_seconds": 39.62565738102421,
+        "mean_seconds": 1.6510690575426754,
+        "median_seconds": 1.800959607004188,
+        "p95_seconds": 1.8023109829067834,
+        "move_max_seconds": 1.802712585995323,
+        "illegal_moves": 0,
+        "input_mutations": 0,
+        "over_five_seconds": 0,
+        "errors": 0
+      }
+    },
+    "statistics_population": "all calls, including invalid results and timeouts",
+    "p95_method": "linear interpolation at 0.95 * (call_count - 1)",
+    "speed_ratio_baseline_over_candidate_per_move": 4.67639584476581
+  },
+  "updated_at": "2026-11-12T09:13:57.790742+00:00"
+}

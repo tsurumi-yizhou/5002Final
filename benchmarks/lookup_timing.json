@@ -1,0 +1,283 @@
+{
+  "measurement_type": "same_work_lookup_kernel_replay",
+  "started_at": "2026-11-12T09:32:18.328366+00:00",
+  "valid": true,
+  "sources": {
+    "games": "/home/yizhou/5002Final/benchmarks/pretable_tournament.json",
+    "reference": "/home/yizhou/5002Final/benchmarks/pretable_reference.py",
+    "candidate": "/home/yizhou/5002Final/benchmarks/prelearning_reference.py"
+  },
+  "environment": {
+    "python": "3.11.16 (main, Aug 25 2026, 14:00:53) [Clang 22.1.3 ]",
+    "executable": "/home/yizhou/.local/bin/python3.11",
+    "numpy": "2.4.6",
+    "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "processor": "",
+    "clock": {
+      "implementation": "clock_gettime(CLOCK_MONOTONIC)",
+      "monotonic": true,
+      "adjustable": false,
+      "resolution": 1e-09
+    }
+  },
+  "settings": {
+    "batches": 5,
+    "replays_per_batch": 50,
+    "parallel_calls": false,
+    "order": "reference first on odd batches; candidate first on even batches",
+    "timed_work": "play, outcome(next player), ranked if outcome zero; reverse undo",
+    "excluded_work": "imports, extraction, initialization, semantic comparisons"
+  },
+  "batches": [
+    {
+      "batch": 1,
+      "order": [
+        "reference",
+        "candidate"
+      ],
+      "engines": {
+        "reference": {
+          "elapsed_seconds": 1.3904095839970978,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": 1.07703285801108,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        }
+      },
+      "ratio_reference_over_candidate": 1.2909630134819843
+    },
+    {
+      "batch": 2,
+      "order": [
+        "candidate",
+        "reference"
+      ],
+      "engines": {
+        "candidate": {
+          "elapsed_seconds": 1.058050744002685,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        },
+        "reference": {
+          "elapsed_seconds": 1.3706777579936897,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        }
+      },
+      "ratio_reference_over_candidate": 1.2954744994633371
+    },
+    {
+      "batch": 3,
+      "order": [
+        "reference",
+        "candidate"
+      ],
+      "engines": {
+        "reference": {
+          "elapsed_seconds": 1.3862416019983357,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": 1.1076178509974852,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        }
+      },
+      "ratio_reference_over_candidate": 1.2515522395652352
+    },
+    {
+      "batch": 4,
+      "order": [
+        "candidate",
+        "reference"
+      ],
+      "engines": {
+        "candidate": {
+          "elapsed_seconds": 1.09907480799302,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        },
+        "reference": {
+          "elapsed_seconds": 1.3938643839937868,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        }
+      },
+      "ratio_reference_over_candidate": 1.268216115824792
+    },
+    {
+      "batch": 5,
+      "order": [
+        "reference",
+        "candidate"
+      ],
+      "engines": {
+        "reference": {
+          "elapsed_seconds": 1.376469316004659,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        },
+        "candidate": {
+          "elapsed_seconds": 1.0912049210019177,
+          "work_count": {
+            "game_replays": 400,
+            "play": 44000,
+            "outcome": 44000,
+            "undo": 44000,
+            "ranked": 31800
+          }
+        }
+      },
+      "ratio_reference_over_candidate": 1.2614214704428006
+    }
+  ],
+  "board_settings": {
+    "seeds": [
+      21011,
+      21012,
+      21021,
+      21022
+    ],
+    "rows": 17,
+    "cols": 13,
+    "horizontal": 0.85,
+    "vertical": 0.7,
+    "move_limit_seconds": 5.0,
+    "parallel_games": false,
+    "board_rng": "numpy.Generator(PCG64(seed))",
+    "agent_rng": "SeedSequence([seed, ply, color == 1, agent_index]) -> np.random.seed",
+    "agent_indices": {
+      "candidate": 0,
+      "baseline": 1
+    },
+    "timeout_enforcement": "SIGALRM and elapsed time",
+    "match_tiebreak": "lower combined thinking time across both rounds"
+  },
+  "games": [
+    {
+      "id": 1,
+      "seed": 21011,
+      "moves": 221
+    },
+    {
+      "id": 2,
+      "seed": 21011,
+      "moves": 221
+    },
+    {
+      "id": 3,
+      "seed": 21012,
+      "moves": 33
+    },
+    {
+      "id": 4,
+      "seed": 21012,
+      "moves": 32
+    },
+    {
+      "id": 5,
+      "seed": 21021,
+      "moves": 221
+    },
+    {
+      "id": 6,
+      "seed": 21021,
+      "moves": 75
+    },
+    {
+      "id": 7,
+      "seed": 21022,
+      "moves": 49
+    },
+    {
+      "id": 8,
+      "seed": 21022,
+      "moves": 28
+    }
+  ],
+  "semantic_replay": {
+    "valid": true,
+    "states_compared": 1768,
+    "games_restored": 8,
+    "ranked_calls_per_replay": 636,
+    "compared_fields": [
+      "position",
+      "empty",
+      "count",
+      "empty_sum",
+      "totals",
+      "winning_points",
+      "threes",
+      "fives",
+      "priorities",
+      "outcome"
+    ]
+  },
+  "summary": {
+    "median_elapsed_seconds": {
+      "reference": 1.3862416019983357,
+      "candidate": 1.0912049210019177
+    },
+    "ratio_of_median_times_reference_over_candidate": 1.2703769707393937,
+    "median_batch_ratio_reference_over_candidate": 1.268216115824792,
+    "ratio_interpretation": "greater than one means candidate is faster",
+    "work_count_per_engine_per_batch": {
+      "game_replays": 400,
+      "play": 44000,
+      "outcome": 44000,
+      "undo": 44000,
+      "ranked": 31800
+    },
+    "states_compared": 1768
+  },
+  "finished_at": "2026-11-12T09:32:30.874540+00:00"
+}
