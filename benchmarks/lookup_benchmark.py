@@ -207,7 +207,7 @@ def positive_int(value):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--games", type=Path,
-                        default=Path("results/benchmarks/pretable_tournament.json"))
+                        default=Path("benchmarks/pretable_tournament.json"))
     parser.add_argument("--reference", type=Path,
                         default=Path("benchmarks/pretable_reference.py"))
     parser.add_argument("--candidate", type=Path, default=Path("gomoku.py"))

@@ -19,7 +19,7 @@ These files preserve the recorded experiments; the completed evaluations refer t
 cycles 65 and 69, while the saved training metrics refer to cycle 72. The cycle 72
 evaluation was still running when these artifacts were selected and is omitted.
 Result files retain their original source paths and environment metadata; paths
-may refer to the original local filename `project_skeleton.py`.
+may refer to the original local filename `gomoku.py`.
 
 The saved dataset is an experiment snapshot. Update it when publishing a finished
 training run. Runtime inference uses the

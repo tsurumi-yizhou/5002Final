@@ -1,0 +1,3872 @@
+{
+  "measurement_type": "head_to_head_tournament",
+  "started_at": "2026-11-12T10:01:07.626765+00:00",
+  "environment": {
+    "python": "3.11.16 (main, Aug 25 2026, 14:00:53) [Clang 22.1.3 ]",
+    "numpy": "2.4.6",
+    "pygame": "2.6.1",
+    "platform": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "executable": "/home/yizhou/.local/bin/python3.11"
+  },
+  "sources": {
+    "candidate": "/home/yizhou/5002Final/gomoku.py",
+    "baseline": "/home/yizhou/5002Final/benchmarks/prelearning_reference.py"
+  },
+  "settings": {
+    "seeds": [
+      61001
+    ],
+    "rows": 17,
+    "cols": 13,
+    "horizontal": 0.85,
+    "vertical": 0.7,
+    "move_limit_seconds": 5.0,
+    "parallel_games": false,
+    "board_rng": "numpy.Generator(PCG64(seed))",
+    "agent_rng": "SeedSequence([seed, ply, color == 1, agent_index]) -> np.random.seed",
+    "agent_indices": {
+      "candidate": 0,
+      "baseline": 1
+    },
+    "timeout_enforcement": "SIGALRM and elapsed time",
+    "match_tiebreak": "lower combined thinking time across both rounds"
+  },
+  "games": [
+    {
+      "id": 1,
+      "seed": 61001,
+      "candidate_color": 1,
+      "moves": [
+        {
+          "ply": 1,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            4,
+            5
+          ],
+          "seconds": 0.0008762579964241013,
+          "rng_seed": 799177795,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 2,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            5,
+            5
+          ],
+          "seconds": 0.0009388280013808981,
+          "rng_seed": 1631993463,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 3,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            4
+          ],
+          "seconds": 0.5005539559933823,
+          "rng_seed": 1198557792,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 4,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            5
+          ],
+          "seconds": 0.5011066139995819,
+          "rng_seed": 2896802531,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 5,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            3
+          ],
+          "seconds": 0.2360356849967502,
+          "rng_seed": 954475259,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 6,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            6,
+            5
+          ],
+          "seconds": 0.5005631719977828,
+          "rng_seed": 135117297,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 7,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            4
+          ],
+          "seconds": 0.5008958260004874,
+          "rng_seed": 3592666196,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 8,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            7,
+            2
+          ],
+          "seconds": 1.15113317000214,
+          "rng_seed": 2764802199,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 9,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            4,
+            4
+          ],
+          "seconds": 0.7507387959922198,
+          "rng_seed": 2002133,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 10,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            6
+          ],
+          "seconds": 0.7514025950076757,
+          "rng_seed": 3634660781,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 11,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            3
+          ],
+          "seconds": 0.7508182619931176,
+          "rng_seed": 1247852344,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 12,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            4
+          ],
+          "seconds": 0.7512891110091005,
+          "rng_seed": 807033534,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 13,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            7
+          ],
+          "seconds": 0.751167312002508,
+          "rng_seed": 157986286,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 14,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            3,
+            6
+          ],
+          "seconds": 0.0004385390056995675,
+          "rng_seed": 2155236281,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 15,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            1
+          ],
+          "seconds": 0.29973994799365755,
+          "rng_seed": 1931880882,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 16,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            6,
+            2
+          ],
+          "seconds": 0.2232677130086813,
+          "rng_seed": 334654442,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 17,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            1
+          ],
+          "seconds": 0.5008724609942874,
+          "rng_seed": 168873826,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 18,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            2
+          ],
+          "seconds": 0.23811325800488703,
+          "rng_seed": 1409206081,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 19,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            9,
+            6
+          ],
+          "seconds": 0.5008664110064274,
+          "rng_seed": 3198471937,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 20,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            2
+          ],
+          "seconds": 0.5006732150068274,
+          "rng_seed": 765452791,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 21,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            4
+          ],
+          "seconds": 0.22314298500714358,
+          "rng_seed": 2885224910,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 22,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            5
+          ],
+          "seconds": 0.9995913669990841,
+          "rng_seed": 394046997,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 23,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            10,
+            3
+          ],
+          "seconds": 0.7513941070064902,
+          "rng_seed": 3648810210,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 24,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            5,
+            8
+          ],
+          "seconds": 0.7513130159932189,
+          "rng_seed": 3613450466,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 25,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            5
+          ],
+          "seconds": 0.7510327070049243,
+          "rng_seed": 4149099372,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 26,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            2
+          ],
+          "seconds": 0.7508425370033365,
+          "rng_seed": 2565579418,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 27,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            5
+          ],
+          "seconds": 0.7508677079895278,
+          "rng_seed": 295854126,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 28,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            2,
+            6
+          ],
+          "seconds": 0.8681026760023087,
+          "rng_seed": 3777443097,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 29,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            9,
+            3
+          ],
+          "seconds": 0.751150754003902,
+          "rng_seed": 1762813388,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 30,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            5
+          ],
+          "seconds": 0.7510565099946689,
+          "rng_seed": 1520607509,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 31,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            8,
+            3
+          ],
+          "seconds": 1.1520815050025703,
+          "rng_seed": 3527378046,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 32,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            4
+          ],
+          "seconds": 0.7514160830032779,
+          "rng_seed": 4033682690,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 33,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            1
+          ],
+          "seconds": 1.1517981180077186,
+          "rng_seed": 544963775,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 34,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            6,
+            7
+          ],
+          "seconds": 1.1516704729874618,
+          "rng_seed": 3760698518,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 35,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            6
+          ],
+          "seconds": 0.0005010489985579625,
+          "rng_seed": 1120790101,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 36,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            1
+          ],
+          "seconds": 1.151869199005887,
+          "rng_seed": 1727404470,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 37,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            10,
+            4
+          ],
+          "seconds": 0.7513022560015088,
+          "rng_seed": 2129297779,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 38,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            6
+          ],
+          "seconds": 1.1516276049951557,
+          "rng_seed": 2468507231,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 39,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            3
+          ],
+          "seconds": 0.0004635090008378029,
+          "rng_seed": 3709571268,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 40,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            5
+          ],
+          "seconds": 1.1513367599982303,
+          "rng_seed": 625232296,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 41,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            4
+          ],
+          "seconds": 0.22396439900330734,
+          "rng_seed": 3510123595,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 42,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            6
+          ],
+          "seconds": 1.151801437998074,
+          "rng_seed": 3060526773,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 43,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            3
+          ],
+          "seconds": 0.7527579909947235,
+          "rng_seed": 3763715313,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 44,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            2
+          ],
+          "seconds": 1.1516302240052028,
+          "rng_seed": 1051705951,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 45,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            1
+          ],
+          "seconds": 0.7512592480052263,
+          "rng_seed": 230904556,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 46,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            5,
+            2
+          ],
+          "seconds": 1.1525016689993208,
+          "rng_seed": 2194935327,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 47,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            9,
+            1
+          ],
+          "seconds": 0.63148083401029,
+          "rng_seed": 1441989366,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 48,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            2
+          ],
+          "seconds": 1.1517041189945303,
+          "rng_seed": 211245012,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 49,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            12,
+            4
+          ],
+          "seconds": 0.7508865459967637,
+          "rng_seed": 3256293690,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 50,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            7,
+            9
+          ],
+          "seconds": 0.7509837789984886,
+          "rng_seed": 3897178316,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 51,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            7
+          ],
+          "seconds": 0.7527100369916297,
+          "rng_seed": 1819755284,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 52,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            7,
+            8
+          ],
+          "seconds": 0.39767301600659266,
+          "rng_seed": 4124810769,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 53,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            7
+          ],
+          "seconds": 0.7513885929947719,
+          "rng_seed": 3390072582,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 54,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            9
+          ],
+          "seconds": 0.22076536598615348,
+          "rng_seed": 240227476,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 55,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            6
+          ],
+          "seconds": 1.1513179900066461,
+          "rng_seed": 455282637,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 56,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            8
+          ],
+          "seconds": 0.7505359089991543,
+          "rng_seed": 540833394,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 57,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            9,
+            7
+          ],
+          "seconds": 0.0004631689953384921,
+          "rng_seed": 769737885,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 58,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            2
+          ],
+          "seconds": 0.7509882890008157,
+          "rng_seed": 3845138374,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 59,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            11,
+            2
+          ],
+          "seconds": 0.0004532489983830601,
+          "rng_seed": 581785254,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 60,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            5
+          ],
+          "seconds": 0.7513169080048101,
+          "rng_seed": 3708912118,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 61,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            8,
+            6
+          ],
+          "seconds": 0.7507600539975101,
+          "rng_seed": 436253335,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 62,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            7,
+            5
+          ],
+          "seconds": 0.0004360289894975722,
+          "rng_seed": 2394061134,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 63,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            11
+          ],
+          "seconds": 0.7510710450005718,
+          "rng_seed": 1150297112,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 64,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            2,
+            8
+          ],
+          "seconds": 0.7506730239983881,
+          "rng_seed": 3201980094,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 65,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            7
+          ],
+          "seconds": 0.4311109020054573,
+          "rng_seed": 2374842359,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 66,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            10
+          ],
+          "seconds": 0.7507386399956886,
+          "rng_seed": 575505559,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 67,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            1,
+            7
+          ],
+          "seconds": 1.1515677649877034,
+          "rng_seed": 261924065,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 68,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            4
+          ],
+          "seconds": 0.7505975340027362,
+          "rng_seed": 1216503864,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 69,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            13,
+            3
+          ],
+          "seconds": 0.7505689459940186,
+          "rng_seed": 1661219256,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 70,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            5
+          ],
+          "seconds": 0.22385147999739274,
+          "rng_seed": 1439167117,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 71,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            12,
+            6
+          ],
+          "seconds": 1.1510242770018522,
+          "rng_seed": 342239403,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 72,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            3
+          ],
+          "seconds": 0.7504776920104632,
+          "rng_seed": 2431859235,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 73,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            14,
+            5
+          ],
+          "seconds": 0.7509810060000746,
+          "rng_seed": 726583585,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 74,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            9
+          ],
+          "seconds": 0.7507849730027374,
+          "rng_seed": 2896597452,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 75,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            13,
+            6
+          ],
+          "seconds": 0.7509999010071624,
+          "rng_seed": 1362171383,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 76,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            8
+          ],
+          "seconds": 0.750952293004957,
+          "rng_seed": 3287653910,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 77,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            11,
+            10
+          ],
+          "seconds": 1.1525658260070486,
+          "rng_seed": 392659546,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 78,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            10
+          ],
+          "seconds": 0.7508709530084161,
+          "rng_seed": 2719829011,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 79,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            12,
+            7
+          ],
+          "seconds": 0.23661101098696236,
+          "rng_seed": 2957730937,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 80,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            8
+          ],
+          "seconds": 1.1516865829908056,
+          "rng_seed": 3734187510,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 81,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            13,
+            4
+          ],
+          "seconds": 0.4039860400080215,
+          "rng_seed": 2006512044,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 82,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            3
+          ],
+          "seconds": 1.15201376999903,
+          "rng_seed": 931652543,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 83,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            2
+          ],
+          "seconds": 0.7509778189996723,
+          "rng_seed": 1327321944,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 84,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            6,
+            9
+          ],
+          "seconds": 0.7509478269930696,
+          "rng_seed": 1154233749,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 85,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            4,
+            7
+          ],
+          "seconds": 1.1513838120008586,
+          "rng_seed": 4279994199,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 86,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            11
+          ],
+          "seconds": 0.7514814780006418,
+          "rng_seed": 1337703549,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 87,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            12,
+            8
+          ],
+          "seconds": 1.151452314996277,
+          "rng_seed": 450817382,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 88,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            5,
+            10
+          ],
+          "seconds": 0.7514168370107654,
+          "rng_seed": 2178743268,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 89,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            4,
+            11
+          ],
+          "seconds": 0.2914689350000117,
+          "rng_seed": 220457228,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 90,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            10
+          ],
+          "seconds": 0.750891962001333,
+          "rng_seed": 3007828812,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 91,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            14,
+            11
+          ],
+          "seconds": 1.151826308996533,
+          "rng_seed": 929862609,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 92,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            9
+          ],
+          "seconds": 0.7510290950012859,
+          "rng_seed": 2850590889,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 93,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            8
+          ],
+          "seconds": 1.1518566820013802,
+          "rng_seed": 1683884194,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 94,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            2
+          ],
+          "seconds": 0.7510955860052491,
+          "rng_seed": 3555834084,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 95,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            11
+          ],
+          "seconds": 0.7510143319959752,
+          "rng_seed": 286433716,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 96,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            2
+          ],
+          "seconds": 0.2507847340020817,
+          "rng_seed": 3496971051,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 97,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            14,
+            1
+          ],
+          "seconds": 0.22263646801002324,
+          "rng_seed": 1054936828,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 98,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            1
+          ],
+          "seconds": 0.7506688220018987,
+          "rng_seed": 3140428698,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 99,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            4
+          ],
+          "seconds": 1.1515406709950184,
+          "rng_seed": 3909894996,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 100,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            16,
+            3
+          ],
+          "seconds": 0.00037842900201212615,
+          "rng_seed": 1327353937,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 101,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            13,
+            7
+          ],
+          "seconds": 0.7514608880010201,
+          "rng_seed": 2068366576,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 102,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            16,
+            4
+          ],
+          "seconds": 0.23667554200801533,
+          "rng_seed": 1698539707,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 103,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            2
+          ],
+          "seconds": 1.1515930949972244,
+          "rng_seed": 1739593068,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 104,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            10
+          ],
+          "seconds": 0.7513185360003263,
+          "rng_seed": 636839013,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 105,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            10
+          ],
+          "seconds": 0.7507682839932386,
+          "rng_seed": 658583882,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 106,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            7
+          ],
+          "seconds": 0.7510258359980071,
+          "rng_seed": 3239787590,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 107,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            1,
+            8
+          ],
+          "seconds": 0.7511502190027386,
+          "rng_seed": 3775181506,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 108,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            2,
+            9
+          ],
+          "seconds": 0.4185665870027151,
+          "rng_seed": 498776143,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 109,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            8,
+            11
+          ],
+          "seconds": 0.7510605920106173,
+          "rng_seed": 2467720229,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 110,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            7,
+            11
+          ],
+          "seconds": 0.0003844290040433407,
+          "rng_seed": 15318,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 111,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            14,
+            10
+          ],
+          "seconds": 0.751067934994353,
+          "rng_seed": 559797351,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 112,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            9
+          ],
+          "seconds": 0.37459150700306054,
+          "rng_seed": 1216851228,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 113,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            10,
+            8
+          ],
+          "seconds": 0.6431268779997481,
+          "rng_seed": 4271441250,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 114,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            9
+          ],
+          "seconds": 0.4489482029894134,
+          "rng_seed": 1666855672,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 115,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            11,
+            11
+          ],
+          "seconds": 1.1517209539888427,
+          "rng_seed": 1578893362,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 116,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            8
+          ],
+          "seconds": 0.7512024040042888,
+          "rng_seed": 231588974,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 117,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            4
+          ],
+          "seconds": 1.1518618989939569,
+          "rng_seed": 349413856,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 118,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            2,
+            1
+          ],
+          "seconds": 0.0003851990040857345,
+          "rng_seed": 3020229225,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 119,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            10
+          ],
+          "seconds": 1.1533409359981306,
+          "rng_seed": 741706150,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 120,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            8
+          ],
+          "seconds": 0.7504663400031859,
+          "rng_seed": 2458359927,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 121,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            10
+          ],
+          "seconds": 0.7510555039916653,
+          "rng_seed": 2441052827,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 122,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            10
+          ],
+          "seconds": 0.7513336089905351,
+          "rng_seed": 2077729112,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 123,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            0,
+            9
+          ],
+          "seconds": 0.7512375359947328,
+          "rng_seed": 773419038,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 124,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            8
+          ],
+          "seconds": 0.7509564549982315,
+          "rng_seed": 1853717946,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 125,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            6
+          ],
+          "seconds": 0.7507327850034926,
+          "rng_seed": 529967368,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 126,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            3,
+            0
+          ],
+          "seconds": 0.7508457819931209,
+          "rng_seed": 3771189053,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 127,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            4,
+            0
+          ],
+          "seconds": 0.7512751180038322,
+          "rng_seed": 3779028634,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 128,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            2
+          ],
+          "seconds": 0.7513485689996742,
+          "rng_seed": 1893470199,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 129,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            0,
+            4
+          ],
+          "seconds": 0.7510179410019191,
+          "rng_seed": 974770043,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 130,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            3
+          ],
+          "seconds": 0.00035899000067729503,
+          "rng_seed": 4091474689,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 131,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            1,
+            4
+          ],
+          "seconds": 0.0003521289909258485,
+          "rng_seed": 2344950062,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 132,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            15,
+            0
+          ],
+          "seconds": 0.7512180119956611,
+          "rng_seed": 1203416768,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 133,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            12,
+            0
+          ],
+          "seconds": 0.7518175159930252,
+          "rng_seed": 2740388622,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 134,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            16,
+            11
+          ],
+          "seconds": 0.7517440780065954,
+          "rng_seed": 208171977,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 135,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            8
+          ],
+          "seconds": 0.7515647390100639,
+          "rng_seed": 2668495000,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 136,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            16,
+            10
+          ],
+          "seconds": 0.7510172510083066,
+          "rng_seed": 1465971178,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 137,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            9
+          ],
+          "seconds": 0.7513955449976493,
+          "rng_seed": 308822611,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 138,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            12
+          ],
+          "seconds": 0.7509332979971077,
+          "rng_seed": 1784930132,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 139,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            9
+          ],
+          "seconds": 0.7512455479882192,
+          "rng_seed": 2863523862,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 140,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            15,
+            10
+          ],
+          "seconds": 0.7512580100010382,
+          "rng_seed": 4119557360,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 141,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            0,
+            3
+          ],
+          "seconds": 0.7613856949901674,
+          "rng_seed": 333142657,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 142,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            16,
+            8
+          ],
+          "seconds": 0.7512727449939121,
+          "rng_seed": 2523517294,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 143,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            11,
+            6
+          ],
+          "seconds": 0.267277325008763,
+          "rng_seed": 685492726,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 144,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            6
+          ],
+          "seconds": 0.751526673004264,
+          "rng_seed": 1155621773,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 145,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            5,
+            0
+          ],
+          "seconds": 0.22217660599562805,
+          "rng_seed": 2545726930,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 146,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            7,
+            12
+          ],
+          "seconds": 0.7521013160003349,
+          "rng_seed": 3810792440,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 147,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            12,
+            12
+          ],
+          "seconds": 0.7515648490079911,
+          "rng_seed": 4040489853,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 148,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            12,
+            5
+          ],
+          "seconds": 0.7515804260037839,
+          "rng_seed": 2173511582,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 149,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            5
+          ],
+          "seconds": 0.5009565560030751,
+          "rng_seed": 2081948056,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 150,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            12
+          ],
+          "seconds": 0.5012946490023751,
+          "rng_seed": 2214135123,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 151,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            14,
+            0
+          ],
+          "seconds": 0.7520783709915122,
+          "rng_seed": 2825481288,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 152,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            5,
+            9
+          ],
+          "seconds": 0.7520777479949174,
+          "rng_seed": 773344123,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 153,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            10
+          ],
+          "seconds": 0.0003433300007600337,
+          "rng_seed": 903956305,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 154,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            0
+          ],
+          "seconds": 0.5012652580044232,
+          "rng_seed": 1094878890,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 155,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            12
+          ],
+          "seconds": 0.5023380519996863,
+          "rng_seed": 87457548,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 156,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            9
+          ],
+          "seconds": 0.5018448639893904,
+          "rng_seed": 910593252,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 157,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            0,
+            1
+          ],
+          "seconds": 0.5026135369989788,
+          "rng_seed": 440948213,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 158,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            3,
+            3
+          ],
+          "seconds": 0.4199400590005098,
+          "rng_seed": 4118819141,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 159,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            1,
+            10
+          ],
+          "seconds": 0.003033372006029822,
+          "rng_seed": 1664527733,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 160,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            9
+          ],
+          "seconds": 0.00039890900370664895,
+          "rng_seed": 3487205074,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 161,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            7,
+            0
+          ],
+          "seconds": 0.00034270899777766317,
+          "rng_seed": 3887556432,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 162,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            7
+          ],
+          "seconds": 0.0003102289920207113,
+          "rng_seed": 3677350726,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 163,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            6
+          ],
+          "seconds": 0.0003185300010954961,
+          "rng_seed": 3755214105,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 164,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            7
+          ],
+          "seconds": 0.00040795000677462667,
+          "rng_seed": 2996218640,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 165,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            10,
+            9
+          ],
+          "seconds": 0.0004998889926355332,
+          "rng_seed": 3966239192,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 166,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            4
+          ],
+          "seconds": 0.0005153490055818111,
+          "rng_seed": 1590430504,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 167,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            8,
+            10
+          ],
+          "seconds": 0.000542298992513679,
+          "rng_seed": 1337559954,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 168,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            10
+          ],
+          "seconds": 0.0005264089995762333,
+          "rng_seed": 2212937454,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 169,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            11,
+            3
+          ],
+          "seconds": 0.0005226180073805153,
+          "rng_seed": 4196687835,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 170,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            3
+          ],
+          "seconds": 0.00048495900409761816,
+          "rng_seed": 2383317203,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 171,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            4,
+            9
+          ],
+          "seconds": 0.0003395690000616014,
+          "rng_seed": 1395808538,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 172,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            8,
+            1
+          ],
+          "seconds": 0.0003004289901582524,
+          "rng_seed": 3819952520,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 173,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            9,
+            11
+          ],
+          "seconds": 0.0003079690068261698,
+          "rng_seed": 1831784641,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 174,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            3,
+            8
+          ],
+          "seconds": 0.0003159000043524429,
+          "rng_seed": 1612139930,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 175,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            10,
+            1
+          ],
+          "seconds": 0.0003100500034634024,
+          "rng_seed": 1428648384,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 176,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            11
+          ],
+          "seconds": 0.00032197900873143226,
+          "rng_seed": 3925787932,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 177,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            9
+          ],
+          "seconds": 0.0003157989995088428,
+          "rng_seed": 475835307,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 178,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            11,
+            1
+          ],
+          "seconds": 0.00029928899311926216,
+          "rng_seed": 333953330,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 179,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            14,
+            6
+          ],
+          "seconds": 0.0003071190003538504,
+          "rng_seed": 3656992039,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 180,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            9,
+            0
+          ],
+          "seconds": 0.00029546899895649403,
+          "rng_seed": 3015420212,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 181,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            9,
+            12
+          ],
+          "seconds": 0.00031882899929769337,
+          "rng_seed": 1082916921,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 182,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            7
+          ],
+          "seconds": 0.00032272899989038706,
+          "rng_seed": 577819559,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 183,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            6,
+            0
+          ],
+          "seconds": 0.00031716900411993265,
+          "rng_seed": 272405070,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 184,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            10,
+            0
+          ],
+          "seconds": 0.00029854899912606925,
+          "rng_seed": 3891541294,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 185,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            10,
+            12
+          ],
+          "seconds": 0.00030715999309904873,
+          "rng_seed": 1687844072,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 186,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            8
+          ],
+          "seconds": 0.00030023000726941973,
+          "rng_seed": 2277442781,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 187,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            2
+          ],
+          "seconds": 0.0003166189999319613,
+          "rng_seed": 3817065231,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 188,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            5,
+            12
+          ],
+          "seconds": 0.0003261889942223206,
+          "rng_seed": 3377215026,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 189,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            11,
+            0
+          ],
+          "seconds": 0.000308508999296464,
+          "rng_seed": 2886726869,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 190,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            15,
+            6
+          ],
+          "seconds": 0.00029579900729004294,
+          "rng_seed": 2424319865,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 191,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            11
+          ],
+          "seconds": 0.00031404900073539466,
+          "rng_seed": 3570240891,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 192,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            1
+          ],
+          "seconds": 0.00029473999165929854,
+          "rng_seed": 716494492,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 193,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            13,
+            11
+          ],
+          "seconds": 0.00030643900390714407,
+          "rng_seed": 2344710718,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 194,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            15,
+            5
+          ],
+          "seconds": 0.0003506789944367483,
+          "rng_seed": 3508110848,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 195,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            7
+          ],
+          "seconds": 0.00031267901067622006,
+          "rng_seed": 2478523357,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 196,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            4,
+            12
+          ],
+          "seconds": 0.0002911589981522411,
+          "rng_seed": 3195124657,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 197,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            3
+          ],
+          "seconds": 0.00030242900538723916,
+          "rng_seed": 4151422001,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 198,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            2,
+            11
+          ],
+          "seconds": 0.00028964001103304327,
+          "rng_seed": 2269444249,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 199,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            3,
+            12
+          ],
+          "seconds": 0.00039318900962825865,
+          "rng_seed": 1576372488,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 200,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            13,
+            0
+          ],
+          "seconds": 0.0003002190060215071,
+          "rng_seed": 2161158828,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 201,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            13,
+            12
+          ],
+          "seconds": 0.0003153989964630455,
+          "rng_seed": 2196667539,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 202,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            5
+          ],
+          "seconds": 0.00029820899362675846,
+          "rng_seed": 3435893611,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 203,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            0,
+            7
+          ],
+          "seconds": 0.00030193899874575436,
+          "rng_seed": 2914769537,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 204,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            15,
+            2
+          ],
+          "seconds": 0.00030949000210966915,
+          "rng_seed": 3682825463,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 205,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            7
+          ],
+          "seconds": 0.00033321000228170305,
+          "rng_seed": 501468734,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 206,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            2,
+            0
+          ],
+          "seconds": 0.00029522999830078334,
+          "rng_seed": 920926882,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 207,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            2,
+            12
+          ],
+          "seconds": 0.00030407898884732276,
+          "rng_seed": 1636301086,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 208,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            14,
+            12
+          ],
+          "seconds": 0.00028674899658653885,
+          "rng_seed": 3826233760,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 209,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            1,
+            1
+          ],
+          "seconds": 0.00032120899413712323,
+          "rng_seed": 2289822085,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 210,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            11
+          ],
+          "seconds": 0.00035646901233121753,
+          "rng_seed": 2033282537,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 211,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            1
+          ],
+          "seconds": 0.0003063789918087423,
+          "rng_seed": 27681237,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 212,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            15,
+            11
+          ],
+          "seconds": 0.00029380999330896884,
+          "rng_seed": 2602810288,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 213,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            1,
+            0
+          ],
+          "seconds": 0.000297859005513601,
+          "rng_seed": 1204739117,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 214,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            1,
+            12
+          ],
+          "seconds": 0.0002845290000550449,
+          "rng_seed": 941374695,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 215,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            15,
+            12
+          ],
+          "seconds": 0.00030231900746002793,
+          "rng_seed": 3987600784,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 216,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            11
+          ],
+          "seconds": 0.00030792999314144254,
+          "rng_seed": 4231697675,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 217,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            1
+          ],
+          "seconds": 0.0002997289993800223,
+          "rng_seed": 3459347079,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 218,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            0,
+            0
+          ],
+          "seconds": 0.00028804900648538023,
+          "rng_seed": 375276762,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 219,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            0,
+            12
+          ],
+          "seconds": 0.0002946390013676137,
+          "rng_seed": 1982454617,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 220,
+          "agent": "baseline",
+          "color": -1,
+          "point": [
+            16,
+            0
+          ],
+          "seconds": 0.00028111999563407153,
+          "rng_seed": 2537079086,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 221,
+          "agent": "candidate",
+          "color": 1,
+          "point": [
+            16,
+            12
+          ],
+          "seconds": 0.0003041700110770762,
+          "rng_seed": 43401685,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        }
+      ],
+      "seconds": {
+        "candidate": 52.94138407196442,
+        "baseline": 52.55716166304774
+      },
+      "move_max_seconds": {
+        "candidate": 1.1533409359981306,
+        "baseline": 1.1525016689993208
+      },
+      "checks": {
+        "candidate": {
+          "calls": 111,
+          "legal_moves": 111,
+          "illegal_moves": 0,
+          "input_mutations": 0,
+          "over_five_seconds": 0,
+          "exceptions": 0
+        },
+        "baseline": {
+          "calls": 110,
+          "legal_moves": 110,
+          "illegal_moves": 0,
+          "input_mutations": 0,
+          "over_five_seconds": 0,
+          "exceptions": 0
+        }
+      },
+      "winner_color": -1,
+      "reason": "full_board_white",
+      "winner": "baseline"
+    },
+    {
+      "id": 2,
+      "seed": 61001,
+      "candidate_color": -1,
+      "moves": [
+        {
+          "ply": 1,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            4,
+            5
+          ],
+          "seconds": 0.0008309179975185543,
+          "rng_seed": 1908482427,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 2,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            5,
+            5
+          ],
+          "seconds": 0.0005907290033064783,
+          "rng_seed": 3352919312,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 3,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            6,
+            5
+          ],
+          "seconds": 0.5007352170068771,
+          "rng_seed": 2692211494,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 4,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            9,
+            7
+          ],
+          "seconds": 0.5006792530039093,
+          "rng_seed": 603798075,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 5,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            6,
+            3
+          ],
+          "seconds": 0.5007495809986722,
+          "rng_seed": 510731363,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 6,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            4,
+            3
+          ],
+          "seconds": 0.5006706259882776,
+          "rng_seed": 3901768433,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 7,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            6,
+            6
+          ],
+          "seconds": 0.5007123609975679,
+          "rng_seed": 1006862901,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 8,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            6,
+            7
+          ],
+          "seconds": 0.2621824809903046,
+          "rng_seed": 1570659304,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 9,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            5,
+            6
+          ],
+          "seconds": 0.750584367007832,
+          "rng_seed": 2016924250,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 10,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            9,
+            6
+          ],
+          "seconds": 0.7508171160006896,
+          "rng_seed": 3765349910,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 11,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            7,
+            2
+          ],
+          "seconds": 0.751037615002133,
+          "rng_seed": 1120832563,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 12,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            5,
+            4
+          ],
+          "seconds": 0.22257987799821422,
+          "rng_seed": 2168524838,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 13,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            9,
+            4
+          ],
+          "seconds": 0.3007824249943951,
+          "rng_seed": 2665767665,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 14,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            7,
+            4
+          ],
+          "seconds": 0.7018915380031103,
+          "rng_seed": 3345290276,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 15,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            5,
+            7
+          ],
+          "seconds": 0.7512892819941044,
+          "rng_seed": 3013707975,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 16,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            9,
+            8
+          ],
+          "seconds": 0.426595372002339,
+          "rng_seed": 4079096584,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 17,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            9,
+            5
+          ],
+          "seconds": 0.9124973040015902,
+          "rng_seed": 295360303,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 18,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            4,
+            8
+          ],
+          "seconds": 0.7509022909944179,
+          "rng_seed": 2615757077,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 19,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            8,
+            4
+          ],
+          "seconds": 0.7506570949917659,
+          "rng_seed": 1274742296,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 20,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            10,
+            6
+          ],
+          "seconds": 0.3442688360082684,
+          "rng_seed": 3068558158,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 21,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            5,
+            1
+          ],
+          "seconds": 0.750974248003331,
+          "rng_seed": 3704593568,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 22,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            6,
+            2
+          ],
+          "seconds": 1.1531047620082973,
+          "rng_seed": 2687351889,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 23,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            9,
+            2
+          ],
+          "seconds": 0.7512127149966545,
+          "rng_seed": 3207704735,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 24,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            9,
+            3
+          ],
+          "seconds": 0.22597516899986658,
+          "rng_seed": 1587706999,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 25,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            10,
+            5
+          ],
+          "seconds": 0.7509260880033253,
+          "rng_seed": 1572719042,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 26,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            11,
+            6
+          ],
+          "seconds": 1.1513740549999056,
+          "rng_seed": 1851488759,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 27,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            11,
+            5
+          ],
+          "seconds": 0.751051273997291,
+          "rng_seed": 886900127,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 28,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            11,
+            8
+          ],
+          "seconds": 0.46529313499922864,
+          "rng_seed": 1982229461,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 29,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            12,
+            5
+          ],
+          "seconds": 1.1517873669945402,
+          "rng_seed": 1565168745,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 30,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            10,
+            9
+          ],
+          "seconds": 0.750974993003183,
+          "rng_seed": 235507553,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 31,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            9,
+            10
+          ],
+          "seconds": 0.22857095499057323,
+          "rng_seed": 3560294362,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 32,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            10,
+            8
+          ],
+          "seconds": 0.7511358829942765,
+          "rng_seed": 1088694999,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 33,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            8,
+            5
+          ],
+          "seconds": 1.1513646240055095,
+          "rng_seed": 2578522662,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 34,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            12,
+            9
+          ],
+          "seconds": 0.4866072690056171,
+          "rng_seed": 4210319179,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 35,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            10,
+            7
+          ],
+          "seconds": 0.22315995999088045,
+          "rng_seed": 1386443062,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 36,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            12,
+            11
+          ],
+          "seconds": 0.7512408720067469,
+          "rng_seed": 157593779,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 37,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            6,
+            1
+          ],
+          "seconds": 1.1517312189971562,
+          "rng_seed": 659540778,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 38,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            8,
+            3
+          ],
+          "seconds": 0.00043294898932799697,
+          "rng_seed": 3265029546,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 39,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            11,
+            10
+          ],
+          "seconds": 0.27648681799473707,
+          "rng_seed": 3995921646,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 40,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            12,
+            10
+          ],
+          "seconds": 0.07053650700254366,
+          "rng_seed": 165480891,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 41,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            10,
+            11
+          ],
+          "seconds": 0.003442261993768625,
+          "rng_seed": 1752838869,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 42,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            12,
+            8
+          ],
+          "seconds": 0.00041129899909719825,
+          "rng_seed": 2161628483,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 43,
+          "agent": "baseline",
+          "color": 1,
+          "point": [
+            12,
+            7
+          ],
+          "seconds": 0.00041988900920841843,
+          "rng_seed": 3072411673,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        },
+        {
+          "ply": 44,
+          "agent": "candidate",
+          "color": -1,
+          "point": [
+            12,
+            12
+          ],
+          "seconds": 0.00045707900426350534,
+          "rng_seed": 1836176685,
+          "legal": true,
+          "input_unchanged": true,
+          "within_five_seconds": true
+        }
+      ],
+      "seconds": {
+        "candidate": 10.268722092005191,
+        "baseline": 12.911003583969432
+      },
+      "move_max_seconds": {
+        "candidate": 1.1531047620082973,
+        "baseline": 1.1517873669945402
+      },
+      "checks": {
+        "candidate": {
+          "calls": 22,
+          "legal_moves": 22,
+          "illegal_moves": 0,
+          "input_mutations": 0,
+          "over_five_seconds": 0,
+          "exceptions": 0
+        },
+        "baseline": {
+          "calls": 22,
+          "legal_moves": 22,
+          "illegal_moves": 0,
+          "input_mutations": 0,
+          "over_five_seconds": 0,
+          "exceptions": 0
+        }
+      },
+      "winner_color": -1,
+      "reason": "exact_five",
+      "winner": "candidate"
+    }
+  ],
+  "summary": {
+    "completed_games": 2,
+    "planned_games": 2,
+    "candidate_raw_round_wins": 1,
+    "candidate_by_color": {
+      "black": {
+        "games": 1,
+        "wins": 0
+      },
+      "white": {
+        "games": 1,
+        "wins": 1
+      }
+    },
+    "agents": {
+      "candidate": {
+        "seconds": 63.21010616396961,
+        "calls": 133,
+        "move_max_seconds": 1.1533409359981306,
+        "legal_moves": 133,
+        "illegal_moves": 0,
+        "input_mutations": 0,
+        "over_five_seconds": 0,
+        "exceptions": 0,
+        "mean_seconds_per_move": 0.4752639561200723
+      },
+      "baseline": {
+        "seconds": 65.46816524701717,
+        "calls": 132,
+        "move_max_seconds": 1.1525016689993208,
+        "legal_moves": 132,
+        "illegal_moves": 0,
+        "input_mutations": 0,
+        "over_five_seconds": 0,
+        "exceptions": 0,
+        "mean_seconds_per_move": 0.49597094884103915
+      }
+    },
+    "speed_ratio_baseline_over_candidate_per_move": 1.0435694574653067,
+    "official_matches": [],
+    "official_match_wins": {
+      "candidate": 0,
+      "baseline": 0
+    },
+    "official_match_ties": 0,
+    "official_points": {
+      "candidate": 0,
+      "baseline": 0
+    },
+    "unpaired_seeds": [
+      61001
+    ]
+  },
+  "updated_at": "2026-11-12T10:03:16.368267+00:00"
+}

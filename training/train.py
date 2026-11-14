@@ -1,9 +1,9 @@
 """Offline search distillation into the single-file competition program.
 
 Example (from the project root):
-  python training/train.py --output-dir results/training/run --cycles 1 --export
-  python training/train.py --output-dir results/training/run --forever --export
-  python training/train.py --output-dir results/training/run --evaluate-only
+  python training/train.py --output-dir training/run --cycles 1 --export
+  python training/train.py --output-dir training/run --forever --export
+  python training/train.py --output-dir training/run --evaluate-only
 
 Finite training ends with an independent tournament; --forever evaluates every
 --evaluate-every cycles (default 10). Each tournament defaults to 50 fresh boards,
@@ -38,7 +38,7 @@ validation examples. --cycle-patience successive gains no larger than
 --cycle-min-delta stop the training loop (defaults 5 cycles and 0.001 units).
 Either patience may be set to zero to disable that stopping rule. Test positions
 and independent matches never decide early stopping. A loop stop also runs its
-final independent tournament. Stop counters survive interruption;
+final independent tournament. Stop counters survive interruption; explicitly
 starting training again after a completed early stop opens a new patience window.
 
 Completed games and partially labelled games resume from progress.json; data.jsonl
@@ -576,7 +576,7 @@ def evaluate_checkpoint(args, configuration):
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--source", type=Path, default=ROOT / "gomoku.py")
-    parser.add_argument("--output-dir", type=Path, default=ROOT / "results/training/run")
+    parser.add_argument("--output-dir", type=Path, default=ROOT / "training/run")
     parser.add_argument("--train-seeds", type=int, nargs="+", default=[31001, 31002, 31003, 31004, 31005, 31006])
     parser.add_argument("--validation-seeds", type=int, nargs="+", default=[41001, 41002])
     parser.add_argument("--test-seeds", type=int, nargs="+", default=[51001, 51002])
@@ -629,7 +629,7 @@ def main():
     args.source, args.output_dir = args.source.resolve(), args.output_dir.resolve()
     args.output_dir.mkdir(parents=True, exist_ok=True)
     progress_path, data_path = args.output_dir / "progress.json", args.output_dir / "data.jsonl"
-    configuration = {"source": os.path.relpath(args.source, ROOT), "families": families,
+    configuration = {"source": str(args.source), "families": families,
                      "fast_scale": args.fast_scale, "teacher_scale": args.teacher_scale,
                      "teacher_repeats": args.teacher_repeats,
                      "positions_per_game": args.positions_per_game,

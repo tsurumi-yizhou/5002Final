@@ -518,7 +518,7 @@ def best_move(state: State, color: int) -> Point:
                 if len(node.children) == len(node.moves):
                     node.solved = -node.player
                     break
-                # Expand another legal move; skip proven losses.
+                # Expand another legal move rather than sample a proven loss.
                 move = node.moves[len(node.children)]
                 play(move, node.player)
                 played.append(move)

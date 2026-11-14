@@ -151,7 +151,7 @@ def play_game(modules, settings, seed, candidate_color, game_id):
     for ply in range(1, rows * cols + 1):
         color = 1 if ply % 2 else -1
         name = "candidate" if color == candidate_color else "baseline"
-        # Agent mutations cannot alter the tournament position.
+        # Agent mutations cannot alter the authoritative tournament position.
         supplied = tuple(array.copy() for array in state)
         agent_seed = int(np.random.SeedSequence(
             [seed, ply, int(color == 1), AGENTS.index(name)]

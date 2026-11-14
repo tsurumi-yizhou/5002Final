@@ -108,12 +108,12 @@
   },
   "cycle": 72,
   "updated_at": "2026-11-12T14:05:00.133714+00:00",
-  "source": "/home/yizhou/5002Final/project_skeleton.py",
+  "source": "/home/yizhou/5002Final/gomoku.py",
   "examples": 2190,
   "labelled_examples": 2064,
   "completed_games": 730,
   "configuration": {
-    "source": "/home/yizhou/5002Final/project_skeleton.py",
+    "source": "/home/yizhou/5002Final/gomoku.py",
     "families": {
       "train": [
         31001,
